@@ -1,0 +1,43 @@
+Eléctronique
+-Pont en H (DC to AC)
+-Pont de diodes (AC toujours positif ou négatif)
+-Diode de roue libre
+-Tube à vide : balance des éléctrons linéairement depuis une plaque par effet thermoionique
+
+Physique
+-Poulie
+-Electrodynamisme et equations de Maxwell
+
+Biologie
+-Cellulose : biopolymère principal constituant de la paroi des cellules végétales : ses gaz émis peuvent s'oxyder et bruler
+
+Chimie
+-Sulfamides (antibiotiques)
+-Electrolyse :
+|-H2O - H2 + O2
+|-Eau salée - Hypochlorite de sodium (javel)
+
+Geologie :
+- Cristallin et amorphe
+
+-Types de charbon
+|-Anthracite	93-97%C	34MJ/kg
+|-Houille		90-93%C	35MJ/kg
+|-Lignite		50-60%C	25MJ/kg
+|-Tourbe		50%C	12MJ/kg
+
+-Ferrite / Martensite (Aciers)
+-Carbyne (agencement linéaire d'atomes de C)
+
+-Galène (PbS)
+-Cinabre (HgS)
+-Sphalérite (ZnS) - peinture fluorescente
+
+-Bakélite : premier plastique synthétique
+
+-Sel de rochelle / seignette : cristal générant des impulsions éléctriques lors soumis à une contraine mécanique (piézoélectrique)
+-Zéolithe : Cristal microporeux utilisé pour absorber l'humidité
+
+-Oxalate de calcium : composant principal des calculs rénaux.
+-Oxalate de sodium : couleur jaune feux d'artifice (pyrotechnie)
+-Nitrate de Strontium : couleur rouge feux d'artifice
