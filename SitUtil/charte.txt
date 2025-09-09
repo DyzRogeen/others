@@ -21,7 +21,7 @@ Geologie :
 - Cristallin et amorphe
 
 -Types de charbon
-|-Anthracite	93-97%C	34MJ/kg
+|-Anthracite		93-97%C	34MJ/kg
 |-Houille		90-93%C	35MJ/kg
 |-Lignite		50-60%C	25MJ/kg
 |-Tourbe		50%C	12MJ/kg

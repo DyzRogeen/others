@@ -1,43 +1,48 @@
 // Init
-var table = document.getElementsByTagName("myTable")[0];
-var headers = table.getAttribute("headers");
-var rows = table.getAttribute("data");
-headers = headers.split(';');
-rows = rows.split(',');
+var tables = document.getElementsByTagName("myTable");
 
-// Construction de la table
-var tab = document.createElement("table");
-tab.setAttribute("style", table.getAttribute("style"));
-tab.setAttribute("class", "dataTable");
+for (let table of tables) {
 
-// Headers
-var head = document.createElement("thead");
-var headRow = document.createElement("tr");
-for (let header of headers) {
-    let th = document.createElement("th");
-    th.setAttribute("onclick", "sortBy('" + header + "')");
-    th.innerHTML = header;
-    headRow.append(th);
-}
-head.append(headRow);
-tab.append(head);
+    var headers = table.getAttribute("headers");
+    var rows = table.getAttribute("data");
+    if (headers != undefined) headers = headers.split(';');
+    else headers = [];
+    rows = rows.split(',');
 
-// Data
-var body = document.createElement("tbody");
+    // Construction de la table
+    var tab = document.createElement("table");
+    tab.setAttribute("style", table.getAttribute("style"));
+    tab.setAttribute("class", "dataTable");
 
-for (let row of rows) {
-    let tr = document.createElement("tr");
-    let values = row.split(';');
-    for (let value of values) {
-        let td = document.createElement("td");
-        td.innerHTML = value;
-        tr.append(td);
+    // Headers
+    var head = document.createElement("thead");
+    var headRow = document.createElement("tr");
+    for (let header of headers) {
+        let th = document.createElement("th");
+        th.setAttribute("onclick", "sortBy('" + header + "')");
+        th.innerHTML = header;
+        headRow.append(th);
     }
-    body.append(tr);
-}
-tab.append(body);
+    head.append(headRow);
+    tab.append(head);
 
-table.replaceWith(tab);
+    // Data
+    var body = document.createElement("tbody");
+
+    for (let row of rows) {
+        let tr = document.createElement("tr");
+        let values = row.split(';');
+        for (let value of values) {
+            let td = document.createElement("td");
+            td.innerHTML = value;
+            tr.append(td);
+        }
+        body.append(tr);
+    }
+    tab.append(body);
+
+    table.replaceWith(tab);
+}
 
 sortBy = function(elem) {
     let tr = [...body.children];

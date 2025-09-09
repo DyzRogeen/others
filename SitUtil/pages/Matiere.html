@@ -2,7 +2,22 @@
     <h2>Matière - Géologie</h2>
     <summ></summ>
 
+    <noperioTable data="
+        H;;;;;;;;;;;;;;;;;;He,
+        Li;Be;;;;;;;;;;;;B;C;N;O;F;Ne,
+        Na;Mg;;;;;;;;;;;;Al;Si;P;S;Cl;Ar,
+        K;Ca;Sc;;Ti;V;Cr;Mn;Fe;Co;Ni;Cu;Zn;Ga;Ge;As;Se;Br;Cr,
+        Rb;Sr;Y;;Zr;Nb;Mo;Tc;Ru;Rh;Pd;Ag;Cd;In;Sn;Sb;Te;I;Xe,
+        Cs;Ba;La;;Hf;Ta;W;Re;Os;Ir;Pt;Au;Hg;Tl;Pb;Bi;Po;At;Rn,
+        Fr;Ra;Ac;;Rf;Db;Sg;Bh;Hs;Mt;Ds;Rg;Cn;Fh;Fl;Mc;Lv;Ts;Og,,
+        ;;;;Ce;Pr;Nd;Pm;Sm;Eu;Gd;Tb;Dy;Ho;Er;Tm;Yb;Tu;,
+        ;;;;Th;Pa;U;Np;Pu;Am;Cm;Bk;Cf;Es;Fm;Nd;Lo;Lr;
+    "></noperioTable>
+
+    <perioTable></perioTable>
+
     <ul class="subjectList">
+
         <li class="subjectSection">
             <h3>Cristallin et amorphe</h3>
         </li>
@@ -12,6 +27,19 @@
                 headers="NOM;Teneur en Carbone;Pouvoir Calorique (MJ/kg)"
                 data="Anthracite;93-97%;~34,Houille;90-93%;~35,Lignite;50-60%;~25,Tourbe;<50%;<12">
             </myTable>
+        </li>
+        <li class="subjectSection">
+            <h3>Echelle de Mohs</h3>
+            Il s'agit d'une échelle de dureté de la matière
+            <a href="https://fr.wikipedia.org/wiki/Echelle" target="blank" rel="noreferrer noopener">wiki</a> :<br>
+            <img src="/assets/Mohs-Hardness-Scale.webp" width="500">
+        </li>
+        <li class="subjectSection">
+            <h3>Minéraux Mafiques et felsiques</h3>
+            Composition en silice (SO2) variable :<br>
+            <b>- <a href="https://fr.wikipedia.org/wiki/Mafique" target="blank" rel="noreferrer noopener">Mafique</a></b> : principalement Mg et Fe<br>
+            <b>- <a href="https://fr.wikipedia.org/wiki/Roche_felsique" target="blank" rel="noreferrer noopener">Falsique</a></b> : SO2 + Al/Na/K<br>
+            <img src="/assets/mafic-felsic.jpg" width="500">
         </li>
         <li class="subjectSection">
             <h3>A DEFINIR</h3>
@@ -38,5 +66,7 @@
     </ul>
 </div>
 
-<script src="../Utils/table.js"></script>
-<script src="../Utils/summary.js"></script>
+<script src="/Utils/table.js"></script>
+<script src="/Utils/periodicTable.js"></script>
+<script src="/Utils/summary.js"></script>
+<script src="/Utils/img_prev.js"></script>

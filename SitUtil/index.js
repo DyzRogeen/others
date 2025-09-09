@@ -5,6 +5,11 @@ var dico = {
     "NaOH": "Soude Caustique",
     "HNO₃": "Acide Nitrique",
     "HCl": "Acide Chloridrique",
+    "NH₃": "Ammoniaque",
+    "CaCO₃": "Carbonate de Calcium",
+    "CaC₂": "Carbure de Calcium",
+    "CH₂O": "Méthanal/Formol",
+    "C₂H₂": "Acétylène",
 }
 
 $(document.getElementById("header")).load("Utils/header.html");

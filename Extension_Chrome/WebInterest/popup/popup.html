@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="popup.css" rel="stylesheet"/>
+        <script src="popup.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h1 id="title">Web Interests</h1>
+            <hr>
+            <div id="list"></div>
+            <hr>
+            <div id="details">
+                <b id="name"></b>
+                <p id="ip"></p>
+                <p id="times_visited"></p>
+                <p id="time_spent"></p>
+                <p id="last_time_visited"></p>
+            </div>
+            <hr>
+            <p id="ee"></p>
+            <canvas id="activities" width="300px" height="150px"></canvas>
+            <hr>
+            <div id="alertes">
+                <h3 style="text-align: center;">Alerts</h3>
+                <div id="alert_list"></div>
+                <input id="openAlertFormBtn" class="btn" type="button" value="Add Alert">
+                <form id="alertForm" hidden>
+
+                    <h3 style="text-align: center;">Create Alert</h3>
+
+                    <label class="formLbl">Alert after : </label><br>
+                    <div class="time_input">
+                        <input id="creditD" type="number" value="0">D
+                        <input id="creditH" type="number" value="0">h
+                        <input id="creditM" type="number" value="0">m
+                        <input id="creditS" type="number" value="0">s
+                    </div><br><br>
+
+                    <label class="formLbl">Renew</label>
+                    <input class="formCheckBox" id="renew" type="checkbox" value="false"><br><br>
+
+                    <div id="time_input_fs" hidden>
+                        <label class="formLbl time_input">Renew Frequency :</label>
+                        <div class="time_input">
+                            <div style="margin-right: 5px;">Every</div>
+                            <input id="renewD" type="number" value="0">D
+                            <input id="renewH" type="number" value="0">h
+                            <input id="renewM" type="number" value="0">m
+                            <input id="renewS" type="number" value="0">s
+                        </div>
+                    </div><br>
+
+                    <label class="formLbl">Block</label>
+                    <input class="formCheckBox" id="block" type="checkbox" value="false">
+                    <br>
+
+                    <div style="display: inline-flex; width: 100%; justify-content: center;">
+                        <input id="cancelAlertFormBtn" class="btn cancelBtn" type="button" value="Cancel">
+                        <input id="addAlertBtn" class="btn" type="button" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
