@@ -95,31 +95,54 @@ function getActivities() {
 function showGraph() {
     const graph = document.getElementById("activities");
     const ctx = graph.getContext("2d");
-
-    ctx.lineWidth = 4;
+    ctx.reset();
 
     let x = [];
     let y = [];
+
+    if (activities.length === 1) {
+        x.push(0);
+        y.push(0);
+    }
 
     for (let activity of activities) {
         x.push(activity.date.split("T")[0]);
         y.push(activity.time_spent);
     }
-
-    const height_ratio = 150 / Math.max(y);
     
+    const height_ratio = 150 / Math.max.apply(Math, y);
+    const width_ratio = 300 / (x.length - 1);
+
+    document.getElementById("Ymax").innerHTML = secondsToStr(Math.max.apply(Math, y), false);
+    
+    // Courbe
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "blue";
+    ctx.fillStyle = "rgba(0, 39, 68, 1)";
+
+    ctx.beginPath();
+    ctx.moveTo(0, 150 - y[0] * height_ratio);
+    for (let i = 1; i < x.length; i++) {
+        ctx.lineTo(i * width_ratio, 150 - y[i] * height_ratio)
+        ctx.arc(i * width_ratio, 150 - y[i] * height_ratio, 2, 0, 2 * Math.PI, true);
+    }
+    ctx.lineTo(310, 160);
+    ctx.lineTo(0, 160);
+    ctx.closePath();
+    ctx.stroke();
+
+    // Remplissage
+    ctx.fillStyle = "rgba(0, 150, 255, 0.3)";
+    ctx.fill();
+
+    // Axes
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = "black";
+
     ctx.beginPath();
     ctx.moveTo(0, 0);
     ctx.lineTo(0, 150);
     ctx.lineTo(300, 150);
-    ctx.stroke();
-
-    ctx.beginPath();
-    ctx.moveTo(40, 300 - y[0] * height_ratio);
-    for (let i = 1; i < x.length; i++) {
-        ctx.lineTo(40 * i, 300 - y[i] * height_ratio)
-    }
-    //ctx.strokeStyle = "blue";
     ctx.stroke();
 }
 

@@ -11,30 +11,6 @@ chrome.runtime.onMessage.addListener((msg, sender, res) => {
         });
         return true;
 
-        if (msg.call === "getUserSites") {
-            chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
-                chrome.tabs.sendMessage(tabs[0].id, {user_id: user_id, for: "getUserSites"}, (sites) => {
-                    res(sites);
-                });
-            });
-            return true;
-        }
-        if (msg.call === "addAlerte") {
-            chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
-                chrome.tabs.sendMessage(tabs[0].id, {for: msg.call, data: msg.data}, () => {
-                    res();
-                });
-            });
-            return true;
-        }
-        if (msg.call === "getActivities") {
-            chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
-                chrome.tabs.sendMessage(tabs[0].id, {for: msg.call}, (activities) => {
-                    res(activities);
-                });
-            });
-            return true;
-        }
     }
 
     if (msg.from === "content") {

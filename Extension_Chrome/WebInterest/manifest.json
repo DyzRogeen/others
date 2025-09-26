@@ -24,5 +24,8 @@
     ],
     "host_permissions": [
         "<all_urls>"
-    ]
+    ],
+    "content_security_policy": {
+        "extension_pages": "default-src 'self'; connect-src 'self' https://localhost:3001;"
+    }
 }
