@@ -1,0 +1,17 @@
+/home/adrie/projets/MyAdminStationServer/test/MyAdminStationServer
+/home/adrie/projets/MyAdminStationServer/test/test/web.config
+/home/adrie/projets/MyAdminStationServer/test/appsettings.Development.json
+/home/adrie/projets/MyAdminStationServer/test/appsettings.json
+/home/adrie/projets/MyAdminStationServer/test/test/appsettings.Development.json
+/home/adrie/projets/MyAdminStationServer/test/test/appsettings.json
+/home/adrie/projets/MyAdminStationServer/test/test/MyAdminStationServer.deps.json
+/home/adrie/projets/MyAdminStationServer/test/test/MyAdminStationServer.runtimeconfig.json
+/home/adrie/projets/MyAdminStationServer/test/MyAdminStationServer.dll
+/home/adrie/projets/MyAdminStationServer/test/MyAdminStationServer.deps.json
+/home/adrie/projets/MyAdminStationServer/test/MyAdminStationServer.runtimeconfig.json
+/home/adrie/projets/MyAdminStationServer/test/MyAdminStationServer.pdb
+/home/adrie/projets/MyAdminStationServer/test/Microsoft.AspNetCore.OpenApi.dll
+/home/adrie/projets/MyAdminStationServer/test/Microsoft.OpenApi.dll
+/home/adrie/projets/MyAdminStationServer/test/Swashbuckle.AspNetCore.Swagger.dll
+/home/adrie/projets/MyAdminStationServer/test/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/adrie/projets/MyAdminStationServer/test/Swashbuckle.AspNetCore.SwaggerUI.dll

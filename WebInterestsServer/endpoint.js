@@ -35,8 +35,8 @@ app.get("/", (req, res) => {
 });
 
 const options = {
-  key: fs.readFileSync("./certs/web-interests-key.pem"),
-  cert: fs.readFileSync("./certs/web-interests-cert.pem")
+  key: fs.readFileSync("./certs/web_interests-key.pem"),
+  cert: fs.readFileSync("./certs/web_interests-cert.pem")
 };
 
 https.createServer(options, app).listen(3001, () => {

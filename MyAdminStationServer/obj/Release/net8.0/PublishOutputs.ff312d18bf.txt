@@ -1,0 +1,12 @@
+/app/MyAdminStationServer
+/app/appsettings.Development.json
+/app/appsettings.json
+/app/MyAdminStationServer.dll
+/app/MyAdminStationServer.deps.json
+/app/MyAdminStationServer.runtimeconfig.json
+/app/MyAdminStationServer.pdb
+/app/Microsoft.AspNetCore.OpenApi.dll
+/app/Microsoft.OpenApi.dll
+/app/Swashbuckle.AspNetCore.Swagger.dll
+/app/Swashbuckle.AspNetCore.SwaggerGen.dll
+/app/Swashbuckle.AspNetCore.SwaggerUI.dll

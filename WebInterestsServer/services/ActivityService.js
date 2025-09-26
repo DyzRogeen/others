@@ -15,14 +15,13 @@ export class ActivityService {
         const date = new Date().toISOString().split('T')[0];
         let query = "SELECT activity_id FROM activity where site_id = ? AND date = ?";
         let [activity_id] = await pool.query(query, [site_id, date]);
-        activity_id = activity_id[0];
 
-        if (!activity_id) {
+        if (activity_id.length === 0) {
             query = "INSERT INTO activity (site_id, time_spent) VALUES (?, ?)";
             await pool.query(query, [site_id, time_spent]);
         } else {
             query = "UPDATE activity SET time_spent = time_spent + ? WHERE activity_id = ?";
-            await pool.query(query, [time_spent, activity_id]);
+            await pool.query(query, [time_spent, activity_id[0].activity_id]);
         }
     }
 }
