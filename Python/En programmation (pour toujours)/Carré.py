@@ -60,7 +60,7 @@ def DL(event):
     ecran.coords(carre, x0, y0, x0+30, y0+30)
 
 def S(event):
-    red = ecran.create_rectangle(
+    red = ecran.create_rectangle(x0, y0, x0+30, y0+30, width=3, fill="red")
     
 
 boutton_quitter = Button(A, text="Quitter", fg="red", command=A.quit)

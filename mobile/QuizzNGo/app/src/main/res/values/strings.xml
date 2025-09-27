@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">QuizzNGo</string>
+    <string name="menu_btn1">Partie Rapide</string>
+    <string name="menu_btn2">Personnalisé</string>
+    <string name="menu_btn3">Par Catégories</string>
+</resources>

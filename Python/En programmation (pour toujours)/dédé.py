@@ -3,5 +3,5 @@ from tkinter.messagebox import *
 A = Tk()
 def a():
     showwarning('ATTENTION!!!','Virus détécté')
- a()
+    a()
 A.mainloop()

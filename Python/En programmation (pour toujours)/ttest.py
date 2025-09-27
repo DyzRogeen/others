@@ -22,8 +22,8 @@ def R(event):
     global dx, dy
     dx = 30
     dy = 30
-    while 1:
-        if dx ==
+    # while 1:
+    #     if dx == 
     Game.move(c, dx, dy)
     A.after(20, R)
 
