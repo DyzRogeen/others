@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="#003845">
+    android:background="@color/main_background">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,19 +15,19 @@
         android:textColor="#00B5DE"
         android:layout_marginBottom="100sp"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         style="@style/menu_btn"
         android:id="@+id/menu_btn1"
         android:text="@string/menu_btn1"
         android:background="#4DC178" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         style="@style/menu_btn"
         android:id="@+id/menu_btn2"
         android:text="@string/menu_btn2"
         android:background="#524DC1"  />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         style="@style/menu_btn"
         android:id="@+id/menu_btn3"
         android:text="@string/menu_btn3"

@@ -5,6 +5,14 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#FF7F7F7F</color>
+    <color name="light_grey">#FFAFAFAF</color>
+
+    <color name="main_background">#003845</color>
+    <color name="selected_answer">#1C58E0</color>
+    <color name="good_answer">#2FB32B</color>
+    <color name="bad_answer">#BF1616</color>
 </resources>

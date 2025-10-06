@@ -1,42 +1,33 @@
 package com.example.quizzngo
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.quizzngo.ui.theme.QuizzNGoTheme
+import androidx.appcompat.app.AppCompatActivity
+import com.example.quizzngo.model.QuizzConfig
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var menu_btn1 = findViewById<Button>(R.id.menu_btn1)
-        var menu_btn2 = findViewById<Button>(R.id.menu_btn2)
-        var menu_btn3 = findViewById<Button>(R.id.menu_btn3)
-    }
-}
+        findViewById<Button>(R.id.menu_btn1).setOnClickListener {
+            val intent = Intent(this, QuickPlay::class.java)
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+            val bundle = Bundle()
+            bundle.putString("configStr", QuizzConfig().toStringConfig());
+            intent.putExtras(bundle)
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    QuizzNGoTheme {
-        Greeting("AndroidPPREVIEW")
+            startActivity(intent)
+            finish()
+        }
+
+        findViewById<Button>(R.id.menu_btn2).setOnClickListener {
+            startActivity(Intent(this, Personnalisation::class.java))
+        }
+
+        findViewById<Button>(R.id.menu_btn3)
+
     }
 }

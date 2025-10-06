@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personnalitation"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            style="@style/perso_section_lbl"
+            android:text="Number of Questions :"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question_number_input"
+            android:inputType="number"
+            android:text="10"/>
+
+        <TextView
+            style="@style/perso_section_lbl"
+            android:text="Choose your difficulty :"/>
+
+        <RadioGroup
+            android:id="@+id/radio_difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/facile"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/normal"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/difficile"/>
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/perso_section_lbl"
+            android:text="Choose your categories :"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <CheckBox
+                style="@style/checkbox"
+                android:id="@+id/cat_all"
+                android:text="@string/category_all"
+                android:textStyle="bold"/>
+
+            <CheckBox
+                style="@style/checkbox"
+                android:id="@+id/cat_musique"
+                android:text="@string/category_musique" />
+
+            <CheckBox
+                style="@style/checkbox"
+                android:id="@+id/cat_cult_gen"
+                android:text="@string/category_cult_gen" />
+
+            <CheckBox
+                style="@style/checkbox"
+                android:id="@+id/cat_arts_lit"
+                android:text="@string/category_arts_lit" />
+
+            <CheckBox
+                style="@style/checkbox"
+                android:id="@+id/cat_tv_cinema"
+                android:text="@string/category_tv_cinema" />
+
+            <CheckBox
+                style="@style/checkbox"
+                android:id="@+id/cat_sport"
+                android:text="@string/category_sport" />
+
+            <CheckBox
+                style="@style/checkbox"
+                android:id="@+id/cat_actu_pol"
+                android:text="@string/category_actu_pol" />
+
+            <CheckBox
+                style="@style/checkbox"
+                android:id="@+id/cat_jeux_vid"
+                android:text="@string/category_jeux_vid" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/menu_btn"
+            android:id="@+id/btn_start"
+            android:gravity="center"
+            android:background="@color/selected_answer"
+            android:text="@string/start"/>
+
+    </LinearLayout>
+
+</LinearLayout>

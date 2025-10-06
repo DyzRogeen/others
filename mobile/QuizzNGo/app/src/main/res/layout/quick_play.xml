@@ -2,6 +2,83 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/main_background">
+
+    <TextView
+        style="@style/question_panel_header"
+        android:id="@+id/question_panel_header"
+        android:text="QUESTION X/X - DIFFICILE" />
+    <TextView
+        style="@style/question_panel"
+        android:id="@+id/question_panel"
+        android:text="YOULOULOU" />
+
+    <LinearLayout
+        style="@style/answers_panel"
+        android:id="@+id/answers_panel" >
+
+        <LinearLayout
+            android:id="@+id/answer_btn_A"
+            style="@style/answer_btn" >
+
+            <TextView
+                style="@style/letter_div"
+                android:text="A" />
+
+            <TextView
+                style="@style/answer_div"
+                android:text="reponse a" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/answer_btn_B"
+            style="@style/answer_btn" >
+
+            <TextView
+                style="@style/letter_div"
+                android:text="B" />
+
+            <TextView
+                style="@style/answer_div"
+                android:text="reponse b" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/answer_btn_C"
+            style="@style/answer_btn" >
+
+            <TextView
+                style="@style/letter_div"
+                android:text="C" />
+
+            <TextView
+                style="@style/answer_div"
+                android:text="reponse c" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/answer_btn_D"
+            style="@style/answer_btn" >
+
+            <TextView
+                style="@style/letter_div"
+                android:text="D" />
+
+            <TextView
+                style="@style/answer_div"
+                android:text="reponse d" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_btn"
+        style="@style/submit_btn" />
 
 </LinearLayout>

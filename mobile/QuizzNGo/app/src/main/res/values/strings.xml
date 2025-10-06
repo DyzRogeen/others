@@ -3,4 +3,27 @@
     <string name="menu_btn1">Partie Rapide</string>
     <string name="menu_btn2">Personnalisé</string>
     <string name="menu_btn3">Par Catégories</string>
+
+    <string name="facile">Facile</string>
+    <string name="normal">Normal</string>
+    <string name="difficile">Difficile</string>
+
+    <string name="category_all">Tout sélectionner</string>
+    <string name="category_musique">Musique</string>
+    <string name="category_cult_gen">Culture Générale</string>
+    <string name="category_arts_lit">Arts et Littérature</string>
+    <string name="category_tv_cinema">TV et Cinéma</string>
+    <string name="category_actu_pol">Actualité et Politique</string>
+    <string name="category_sport">Sport</string>
+    <string name="category_jeux_vid">Jeux Vidéos</string>
+
+    <string name="submit_btn">SUBMIT</string>
+    <string name="next_btn">NEXT QUESTION</string>
+    <string name="finish_quizz">FINISH QUIZZ</string>
+
+    <string name="score_lbl">Ton Score est de</string>
+    <string name="retry">REESSAYER</string>
+    <string name="menu">MENU</string>
+    <string name="start">START</string>
+
 </resources>
